@@ -26,10 +26,15 @@ build/Release
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
 
-.idea/
-.idea/workspace.xml
-
-temp
+# Other project specific items
+scratch
+test/single
+.build
+.idea
+.idea/*
+.settings
 .DS_Store
+temp
 
-build
+sample_app
+config

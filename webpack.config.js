@@ -3,7 +3,6 @@ const webpack = require("webpack");
 
 var libraryName = "SPAFramework";
 var outputFile = libraryName + ".js";
-var UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 
 module.exports = {
     // configuration
@@ -28,21 +27,6 @@ module.exports = {
         "react-dom/server": "ReactDOMServer"
     },
     resolve: {
-        // modules: [
-        //     resolve(__dirname, "app"),
-        //     resolve(__dirname, "node_modules")
-        // ],
-        // alias: {
-        //   "react": resolve("/node_modules/react"),
-        //   "react-dom":resolve("/node_modules/react-dom"),
-        // },
-        // ALIAS are no more valid in Webpack 2, remove them.
-
-        // modules: [//path.resolve(__dirname, "node_modules")
-        //     // path.join(app_config.get("application_root_folder"), "node_modules"),
-        //     // path.path.resolve("./node_modules"),
-        //     // path.path.resolve("./lib")
-        // ],
         extensions: [".js", ".jsx"]
     },
 
@@ -51,13 +35,6 @@ module.exports = {
             {
                 test: /\.jsx?$/,
                 exclude: /(node_modules|bower_components)/,
-                // "include" is commonly used to match the directories
-                // include: [
-                //     path.resolve(__dirname),
-                //     // path.join(path.resolverRoot, entityRelativePath, "resources"),
-                //     // path.join(path.resolverRoot, "resources"),
-                //     // path.resolverRoot
-                // ],
                 use: [
                     {
                         loader: "babel-loader",

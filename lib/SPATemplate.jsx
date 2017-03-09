@@ -39,7 +39,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const TempContainer = connect(mapStateToProps, mapDispatchToProps)(TempComponent);
 
-export class BaseSPATemplate extends React.Component {
+export class SPATemplate extends React.Component {
     /**
      *
      */
@@ -70,8 +70,8 @@ export class BaseSPATemplate extends React.Component {
         this.genInitialStateData = this
             .genInitialStateData
             .bind(this);
-        this.createBody = this
-            .createBody
+        this.____createBody__ = this
+            .____createBody__
             .bind(this);
 
     }
@@ -142,7 +142,7 @@ export class BaseSPATemplate extends React.Component {
     /**
      *
      */
-    createBody() {
+    ____createBody__() {
 
         const AppContainer = this.createAppContainer();
 
@@ -183,7 +183,7 @@ export class BaseSPATemplate extends React.Component {
     render() {
         return (
             <div id="document-body">
-                {this.createBody()}
+                {this.____createBody__()}
             </div>
         );
     }
@@ -194,10 +194,10 @@ export class BaseSPATemplate extends React.Component {
  *
  * @type {Object}
  */
-BaseSPATemplate.propTypes = {};
+SPATemplate.propTypes = {};
 
 /**
  *
  * @type {Object}
  */
-BaseSPATemplate.defaultProps = {};
+SPATemplate.defaultProps = {};

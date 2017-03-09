@@ -1,6 +1,6 @@
 "use strict";
 
 import {apiGet, apiPost} from "./lib/actions/rest_actions";
-import {BaseSPATemplate} from "./lib/BaseSPATemplate";
+import {SPATemplate} from "./lib/SPATemplate";
 
-export {BaseSPATemplate, apiGet, apiPost};
+export {SPATemplate, apiGet, apiPost};

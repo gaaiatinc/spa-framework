@@ -9,8 +9,6 @@ import SPAppReducers from "./reducers";
 
 /**
  *
- * @param {[type]} _csrf     [description]
- * @param {[type]} modelData [description]
  */
 const TempComponent = ({}) => (
     <div></div>
@@ -18,7 +16,6 @@ const TempComponent = ({}) => (
 
 /**
  *
- * @type {Object}
  */
 TempComponent.propTypes = {};
 
@@ -49,15 +46,33 @@ export class BaseSPATemplate extends React.Component {
     constructor(props) {
         super(props);
 
-        this.getExternalAssetsDescriptor = this.getExternalAssetsDescriptor.bind(this);
-        this.filterModelData = this.filterModelData.bind(this);
-        this.getHeaderTags = this.getHeaderTags.bind(this);
-        this.getBodyEndElement = this.getBodyEndElement.bind(this);
-        this.getBodyClassName = this.getBodyClassName.bind(this);
-        this.createAppContainer = this.createAppContainer.bind(this);
-        this.getAppStateReducer = this.getAppStateReducer.bind(this);
-        this.genInitialStateData = this.genInitialStateData.bind(this);
-        this.createBody = this.createBody.bind(this);
+        this.getExternalAssetsDescriptor = this
+            .getExternalAssetsDescriptor
+            .bind(this);
+        this.filterModel = this
+            .filterModel
+            .bind(this);
+        this.getHeaderTags = this
+            .getHeaderTags
+            .bind(this);
+        this.getBodyEndElement = this
+            .getBodyEndElement
+            .bind(this);
+        this.getBodyClassName = this
+            .getBodyClassName
+            .bind(this);
+        this.createAppContainer = this
+            .createAppContainer
+            .bind(this);
+        this.getAppStateReducer = this
+            .getAppStateReducer
+            .bind(this);
+        this.genInitialStateData = this
+            .genInitialStateData
+            .bind(this);
+        this.createBody = this
+            .createBody
+            .bind(this);
 
     }
 
@@ -80,10 +95,10 @@ export class BaseSPATemplate extends React.Component {
     }
 
     /**
-    * This method must return a subset of the modelData that is secure for
+    * This method must return a subset of the model that is secure for
     * sending to the browser.
     */
-    filterModelData(model) {
+    filterModel(model) {
         return model;
     }
 

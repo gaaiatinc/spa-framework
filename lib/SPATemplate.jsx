@@ -112,10 +112,8 @@ export class SPATemplate extends React.Component {
     /**
       *
       */
-    getBodyEndElement() {
-        return function() {
-            return (<div/>);
-        };
+    getBodyEndElement(model) {
+        return (<div/>);
     }
 
     /**

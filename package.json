@@ -1,6 +1,6 @@
 {
   "name": "spa-framework",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A module comprising the base framework for a single page react-redux app.",
   "main": "./SPAFramework.js",
   "scripts": {

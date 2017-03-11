@@ -1,6 +1,6 @@
 {
   "name": "spa-framework",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A module comprising the base framework for a single page react-redux app.",
   "main": "./SPAFramework.js",
   "scripts": {
@@ -22,8 +22,12 @@
     "url": "https://github.com/gaaiatinc/spa-framework.git"
   },
   "homepage": "https://github.com/gaaiatinc/spa-framework.git",
-  "keywords": ["react", "redux", "single-page", "framework"],
-
+  "keywords": [
+    "react",
+    "redux",
+    "single-page",
+    "framework"
+  ],
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-eslint": "^7.1.1",
@@ -43,7 +47,6 @@
     "grunt-contrib-watch": "^1.0.0",
     "mocha": "^3.2.0"
   },
-
   "dependencies": {
     "axios": "^0.15.3",
     "babel-core": "^6.23.1",
@@ -67,11 +70,11 @@
     "webpack": "^2.2.1",
     "xss-filters": "^1.2.7"
   },
-
-  "maintainers": [{
-    "name": "Ali Ismael",
-    "email": "ali@gaaiat.com"
-  }],
-
+  "maintainers": [
+    {
+      "name": "Ali Ismael",
+      "email": "ali@gaaiat.com"
+    }
+  ],
   "peerDependencies": {}
 }
